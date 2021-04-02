@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_623a965352e14c32b61816e2804bf598 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_623a965352e14c32b61816e2804bf598" ></div>
+        
+</body>
+<script>    
+    
+            var map_623a965352e14c32b61816e2804bf598 = L.map(
+                "map_623a965352e14c32b61816e2804bf598",
+                {
+                    center: [37.566, 126.975],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_544a4bf79d1e4d888a017137f2cde048 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_623a965352e14c32b61816e2804bf598);
+        
+    
+            var marker_8ffdee902c8f44ada6997336faf22190 = L.marker(
+                [37.56599199328415, 126.9751675576716],
+                {}
+            ).addTo(map_623a965352e14c32b61816e2804bf598);
+        
+    
+            var icon_d89dfc06bd1a4a309551ee02b01d365a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bookmark", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ffdee902c8f44ada6997336faf22190.setIcon(icon_d89dfc06bd1a4a309551ee02b01d365a);
+        
+    
+        var popup_4fabd750029848aba0236df0ac279c11 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_db82b8230881491a8baaf76555bcde02 = $(`<div id="html_db82b8230881491a8baaf76555bcde02" style="width: 100.0%; height: 100.0%;"><h4><span style="color: #FF00FF;font-weight: bold">벚꽃</span>이 만개한 <span style="font-weight: bold">덕수궁</span>에서<br>아름다운 봄 풍경을 구경하세요~~♬</h4><hr><h5>벌써 4월! 항상 즐겁게</h5></div>`)[0];
+            popup_4fabd750029848aba0236df0ac279c11.setContent(html_db82b8230881491a8baaf76555bcde02);
+        
+
+        marker_8ffdee902c8f44ada6997336faf22190.bindPopup(popup_4fabd750029848aba0236df0ac279c11)
+        ;
+
+        
+    
+    
+            marker_8ffdee902c8f44ada6997336faf22190.bindTooltip(
+                `<div>
+                     # 덕수궁 벚꽃
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
